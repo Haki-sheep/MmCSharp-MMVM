@@ -1,13 +1,16 @@
 namespace MiMieMVVM.Demo.Internal
 {
     /// <summary>
-    /// 示例 VM 编排用例 对外 API
+    /// 示例 VM 一个类一个接口 Model 私有
     /// </summary>
-    public class CounterViewModel : IViewModel<CounterState>
+    public class CounterViewModel : IViewModel
     {
         private CounterState state = new CounterState();
 
-        public CounterState Model => state;
+        /// <summary>
+        /// UI 展示计数
+        /// </summary>
+        public int DisplayCount => state.Count;
 
         /// <summary>
         /// 初始化

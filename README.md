@@ -13,9 +13,7 @@ View → ViewModel → Model
 | 层 | 接口 | 说明 |
 |---|---|---|
 | View | `IView` | `ViewModel` `Bind` `Unbind` |
-| View | `IView<TViewModel>` | 与 ViewModel 类型配对 |
 | ViewModel | `IViewModel` | `Initialize` `Shutdown` |
-| ViewModel | `IViewModel<TModel>` | 与 Model 类型配对，暴露 `Model` |
 | Model | `IModel` | 层标记 |
 | Model | `IModelConfig` | 配表 `ConfigId` `Name` |
 | Model | `IModelState` | 运行时状态标记 |
