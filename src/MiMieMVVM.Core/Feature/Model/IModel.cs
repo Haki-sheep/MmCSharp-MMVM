@@ -6,5 +6,6 @@ namespace MiMieMVVM
     /// </summary>
     public interface IModel
     {
+        
     }
 }

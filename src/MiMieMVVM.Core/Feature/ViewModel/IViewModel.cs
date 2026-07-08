@@ -16,4 +16,17 @@ namespace MiMieMVVM
         /// </summary>
         void Shutdown();
     }
+
+    /// <summary>
+    /// ViewModel 层泛型契约
+    /// 约束 ViewModel 与 Model 配对
+    /// </summary>
+    public interface IViewModel<TModel> : IViewModel
+        where TModel : IModel
+    {
+        /// <summary>
+        /// Model 引用
+        /// </summary>
+        TModel Model { get; }
+    }
 }
