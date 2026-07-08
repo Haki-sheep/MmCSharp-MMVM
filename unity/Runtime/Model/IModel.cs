@@ -21,6 +21,5 @@ namespace MiMieMVVM
     /// </summary>
     public interface IModelState : IModel
     {
-        
     }
 }

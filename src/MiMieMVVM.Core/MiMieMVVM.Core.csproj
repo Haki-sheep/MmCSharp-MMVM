@@ -8,4 +8,8 @@
     <AssemblyName>MiMieMVVM</AssemblyName>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="..\..\unity\Runtime\**\*.cs" />
+  </ItemGroup>
+
 </Project>
