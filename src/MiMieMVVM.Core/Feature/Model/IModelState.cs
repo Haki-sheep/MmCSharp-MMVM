@@ -1,12 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace MiMieMVVM
 {
-    public interface IModelState
+    /// <summary>
+    /// 运行时状态 Model 标记
+    /// </summary>
+    public interface IModelState : IModel
     {
-        
     }
 }
