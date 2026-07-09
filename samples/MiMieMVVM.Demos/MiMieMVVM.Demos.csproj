@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>9.0</LangVersion>
+    <Nullable>disable</Nullable>
+    <RootNamespace>MiMieMVVM.Demos</RootNamespace>
+    <AssemblyName>MiMieMVVM.Demos</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\MiMieMVVM.Core\MiMieMVVM.Core.csproj" />
+  </ItemGroup>
+
+  <!-- Unity Demo 仅作源码参考 不参与控制台编译 -->
+  <ItemGroup>
+    <Compile Remove="Unity\**\*.cs" />
+    <None Include="Unity\**\*" />
+  </ItemGroup>
+
+</Project>
